@@ -1,0 +1,22 @@
+// IMG //
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+// BUTTONS (READ ME) //
+
+.read{
+    background: $color-primary-dark;
+    color: $color-white;
+    font-family: "Kumar One", sans-serif;
+    letter-spacing: 1px;
+    line-height: 3.2rem;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1px;
+}

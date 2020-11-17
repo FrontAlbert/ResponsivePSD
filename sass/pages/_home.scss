@@ -1,0 +1,297 @@
+.home{
+    background-image: url(../images/header-home.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 90vh;
+    position: relative;
+
+    @include respond(phone){
+        height: 80vh;
+    }
+}
+
+.cover{
+    display: block;
+
+    &__title{
+        width: 50%;
+        margin: 8rem 6rem;
+
+        @include respond(phone-tab){
+            text-align: center;
+            margin: 10rem 0;
+            width: 100%;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        width: 48%;
+        left: 0;
+        top: 40%;
+        
+        &-1{
+            width: 100%;
+        }
+
+        @include respond(tab-land) { 
+            top: 55%;
+        }
+
+        @include respond(phone-tab){
+            width: 60%;
+        }
+    }
+}
+
+.main{
+    display: flex;
+    padding: 10rem 0 12rem 0;
+    flex-wrap: wrap;
+
+    @include respond(phone-tab){
+        padding: 10rem 0;
+    }
+
+    @include respond(phone){
+        padding: 3rem 0;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about{
+        flex: 1 0 65%;
+        margin-right: 5rem;
+
+        @include respond(phone){
+            margin-right: 0;
+            text-align: center;
+        }
+    }
+
+    &__p{
+        margin-bottom: 3rem;
+    }
+
+    &__img{
+        flex: 1 0 20%;
+
+        & img{
+            box-shadow: -1.5rem 1.5rem $color-yellow;
+        }
+
+        @include respond(phone-tab){
+            display: none;
+        }
+    }
+}
+
+.gallery{
+    background: $color-primary;
+    padding: 8rem 0;
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(phone-tab){
+            flex-direction: column;
+        }
+
+        & li {
+            @include respond(phone-tab){
+                margin: 0 auto;
+                width: 70%;
+            }
+        }
+    }
+}
+
+.feature{
+    padding: 10rem 0;
+
+    @include respond(phone){
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    &__wrap{
+        display: flex;
+        flex-wrap: wrap;
+
+        @include respond(phone-tab){
+            flex-direction: column;
+        }
+    }
+
+    &__list{
+        flex: 1 0 35%;
+        margin: 2.5rem;
+        margin-left: 6rem;
+        position: relative;
+    }
+
+    &__icons{
+        position: absolute;
+        left: -6rem;
+    }
+
+    &__icon{
+        background: $color-yellow;
+        border-radius: 50%;
+        padding: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+.detail{
+    @include flex;
+    background: $color-primary;
+    position: relative;
+
+    @include respond(phone-tab){
+        flex-direction: column;
+    }
+
+    &__img-1{
+        width: 45%;
+        position: relative;
+        top: -5rem;
+
+        @include respond(tab-land){
+            top: 0rem;
+        }
+
+        @include respond(phone-tab){
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 8rem;
+        }
+
+        & img {
+            box-shadow: 2rem 2rem $color-yellow;
+        }
+    }
+
+    &__content-1,
+    &__content-2 {
+        width: 40%;
+
+        @include respond(tab-land){
+            width: 45%;
+        }
+
+        @include respond(tab-port){
+            text-align: center;
+        }
+
+        & p {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__content-1{
+        margin-right: 5rem;
+        padding: 8rem 7rem 5rem 0rem;
+
+        @include respond(tab-land){
+            margin: 3rem;
+            padding: 3rem 0;
+        }
+
+        @include respond(phone-tab){
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 5rem;
+        }
+
+        @include respond(phone){
+            margin-top: 3rem;
+        }
+    }
+
+    &__content-2{
+        text-align: right;
+        padding: 8rem 0 5rem 13rem;
+        margin-left: 8rem;
+
+        @include respond(tab-land){
+            margin: 3rem;
+            padding: 3rem;
+        }
+
+        @include respond(tab-port){
+            text-align: center;
+        }
+
+        @include respond(phone-tab){
+            width: 80%;
+            margin: 5rem auto;
+            order: 4;
+        }
+
+        @include respond(phone){
+            margin: 3rem auto;
+        }
+    }
+
+    &__img-2{
+        width: 45%;
+        position: relative;
+        bottom: -6rem;
+
+        @include respond(tab-land){
+            bottom: 0;
+        }
+
+        @include respond(phone-tab){
+            width: 80%;
+            margin: 0 auto;
+            order: 3;
+            margin-top: 5rem;
+        }
+
+        @include respond(phone){
+            margin-top: 3rem;
+        }
+
+        & img{
+            box-shadow: -2rem 2rem $color-yellow;
+        }
+
+    }
+}
+
+.banner{
+    width: 100%; 
+}
+
+.search{
+    padding: 20rem 0;
+    text-align: center;
+
+    @include respond(tab-land){
+        padding: 15rem 0;
+    }
+
+    @include respond(phone-tab){
+        padding: 10rem 0;
+    }
+
+    @include respond(phone){
+        padding: 5rem 0;
+    }
+
+    & p {
+        text-align: left;
+        padding-bottom: 3rem;
+
+        @include respond(phone){
+            text-align: center;
+        }
+    }
+}
+

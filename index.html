@@ -3,155 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=Nova+Flat&display=swap" rel="stylesheet">
-    <title>Foot Foward</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/b9bb550d8b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Kumar+One+Outline&family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sanctuary Helpers</title>
 </head>
 <body>
-    <header>
-        <div class="content-wrap">
-        <button class="hamburger"><i class="fa fa-bars"></i></i><p class="sr-only">Click here to open up hamburger menu</p></button>
-        <nav class="menu-links">
-            <div class="full-screen">
-                <button class="exit-menu">
-                    <i class="fa fa-times"></i>
-                    <p class="sr-only">Click me to close the navigation.</p>
-                </button>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+    <header class="home">
+        <div class="row">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__item-tag">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__item-tag">About</a></li>
+                    <li class="nav__item"><a href="blog.html" class="nav__item-tag">Blog</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__item-tag">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="cover">
+                <h1 class="cover__title">Sanctuary Helpers</h1>
+                <div class="cover__img">
+                    <img class ="cover__img-1" src="./images/header-box.png" alt="Two blue leather couches">
+                </div>
             </div>
-        </nav>
-        <div class="clearfix">
-            <div class="social-icon">
-                <ul class="social-media">
-                    <li class="social-media-content"><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li class="social-media-content"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                    <li class="social-media-content"><a href="#"><i class="fa fa-snapchat-ghost"></i></a></li>
-                    <li class="social-media-content"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                </ul>
-            </div>
-            <div class="greybox">
-                <h1>Foot <br>Forward</h1>
-            </div>
+            <label for="hamburger" class="hamburger"><i class="fas fa-bars"></i></label>
         </div>
     </header>
-    <main>
-        <div class="main-wrap1 clearfix">
-            <div class="main-img part1">
-                <img src="assets/image-2_2@2x.png" alt="Many shoes displayed on the wall">
+    <main class="main">
+        <div class="row main__content" id="about">
+            <div class="main__about">
+                <h2>Discovering New Materials</h2> 
+                <p class="main__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, reiciendis neque? Iure facilis recusandae odio nihil? Omnis beatae harum, provident corporis, dolore delectus veritatis doloribus, recusandae molestias aspernatur tenetur. Aspernatur?
+                Commodi doloribus adipisci maxime possimus explicabo tempora esse non placeat culpa, fuga minima ipsa saepe suscipit nemo debitis exercitationem impedit facilis, itaque ipsum architecto voluptates harum unde? Incidunt, harum hic!
+                </p>
+                <a class="read" href="#">Find Out More</a>
             </div>
-            <div class="main-content part1">
-                <h2>We specialize in:</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quibusdam distinctio amet officia, reiciendis nam suscipit ex fugiat soluta nesciunt ipsa sint eligendi vero perspiciatis voluptates recusandae! Aliquid, voluptates asperiores.</p>
-                <button>Read More</button>
+            <div class="main__img">
+                <img src="./images/small-box.jpg" alt="Purple couch in living room">
             </div>
-        </div>
-        <div class="main-wrap2 clearfix">
-            <div class="main-img part2">
-                <img src="assets/image-2-copy@2x.png" alt="Someone is throwing a pink show in the air">
-            </div>
-            <div class="main-content part2">
-                <h2>Foot care</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde commodi minima soluta pariatur magni suscipit incidunt iusto eveniet ducimus inventore amet sunt odio quaerat fugit molestias qui iure, vero eligendi.</p>
-                <button>Read More</button>
-            </div>
-        </div>
+        </div>   
     </main>
     <section>
-        <div class="grey-box1 clearfix">
-            <div class="giving-back"> 
-                <div class="photo-container">
-                    <img src="assets/image-6@2x.png" alt="White sneaker paired with black sweatpants">
-                </div>
-                <div class="info-container">
-                    <h2>Giving back</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique quia repellat ratione quo aspernatur exercitationem voluptas sapiente aut voluptatum rerum nostrum beatae nesciunt mollitia dolores, dicta necessitatibus eveniet reiciendis.</p>
-                 <button>Read More</button>
-                </div>
+        <div class="gallery">
+            <div class="row">
+                    <ul class="gallery__wrap">
+                        <li><img src="./images/gallery-image-1.jpg" alt="Green cabinet with a brown vase filled with wheat on top"></li>
+                        <li> <img src="./images/gallery-image-2.jpg" alt="Brown couch with a black circular table in front"></li>
+                        <li><img src="./images/gallery-image-3.jpg" alt="Fancy circular bamboo woven chair"></li>
+                    </ul>
             </div>
         </div>
     </section>
-    <section class="container-icon">
-        <div class="grey-box2 clearfix">
-            <div class="icon">
-                <i class="fa fa-shopping-bag"></i>
-                <span>Products</span>
-            </div>
-            <div class="icon">
-                <i class="fa fa-group"></i>
-                <span>Community</span>
-            </div>
-            <div class="icon">
-                <i class="fa fa-phone"></i>
-                <span>Reach out</span>
-            </div>
-        </div>
-    </section>
-    <section class="team-gram">
-        <div class="clearfix">
-            <h2 class="the-gram">The Gram</h2>
-            <div class="gram">
-                <img src="assets/image-2@2x.png" alt="A person is holding a black sneaker to the clouds">
-            </div>
-            
-            <div class="gram">
-                <img src="assets/image-3@2x.png" alt="A pair of white vans being wored outside">
-            </div>
-
-            <div class="gram">
-                <img src="assets/image-4@2x.png" alt="A pair of white sneaker">
+    <section>
+        <div class="row">
+            <div class="feature">
+                <ul class="feature__wrap">
+                    <li class="feature__list">
+                        <h2><span class="feature__icons"><i class="feature__icon fas fa-home"></i></span>Customized Offers</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem quae iste pariatur nobis quam a eius odio alias sit officiis, itaque dolor consequatur. Fugiat nihil est maiores quas recusandae!</p>
+                    </li>
+                    <li class="feature__list">
+                        <h2><span class="feature__icons"><i class="feature__icon fas fa-users"></i></span>Community</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem quae iste pariatur nobis quam a eius odio alias sit officiis, itaque dolor consequatur. Fugiat nihil est maiores quas recusandae!</p>
+                    </li>
+                    <li class="feature__list">
+                        <h2><span class="feature__icons"><i class="feature__icon fas fa-file"></i></span>Blog</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem quae iste pariatur nobis quam a eius odio alias sit officiis, itaque dolor consequatur. Fugiat nihil est maiores quas recusandae!</p>
+                    </li>
+                    <li class="feature__list">
+                        <h2><span class="feature__icons"><i class="feature__icon fas fa-phone"></i></span>Get in Touch</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi quidem quae iste pariatur nobis quam a eius odio alias sit officiis, itaque dolor consequatur. Fugiat nihil est maiores quas recusandae!</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-
+    <section>
+        <div class="detail">
+            <div class="detail__img-1">
+                <img src="./images/left-image.jpg" alt="Fancy white chairs and a wooden table with a bonsai tree on top">
+            </div>
+            <div class="detail__content-1">
+                <h2>Group Programs</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aperiam ad iure autem optio facilis consequatur tempore saepe. Laborum voluptates ullam.</p>
+                <a href="#" class="read">Read More</a>
+            </div>
+            <div class="detail__content-2">
+                <h2>New Locations</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aperiam ad iure autem optio facilis consequatur tempore saepe. Laborum voluptates ullam.</p>
+                <a href="#" class="read">Read More</a>
+            </div>
+            <div class="detail__img-2">
+                <img src="./images/right-image.jpg" alt="Fancy white chairs and a wooden table with a bonsai tree on top">
+            </div>
+        </div>
+        <div class="banner">
+            <img class="banner__img" src="./images/banner-image.jpg" alt="Brown leather couch with two purple couches on each side surrounding a round table">
+        </div>
+    </section>
+    <section class="search">
+        <div class="row">
+            <h2>Search By Style</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea vitae eveniet exercitationem rerum quos deserunt est itaque nisi consequatur voluptas. Esse obcaecati, laudantium earum qui labore atque quod minima quae?Nesciunt, sint eum accusamus aut autem aliquid ea aliquam nemo iusto cumque voluptas, quaerat quia deleniti minima nihil, repellendus hic quasi? Praesentium, expedita repellendus! Laborum nihil distinctio quia accusantium id?</p>
+            <a href="#" class="read">Find Out More</a>
+        </div>
+    </section>
     <footer>
-        <ul class="footer-links">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-        <div class="wrapper clearfix">
-            <div class="text-box side1">
-                <h3>Contact</h3>
-                <p>info@gmail.com | 123-456-7890
-                <span>123 Some Road, Toronto, ON</span> 
-                <span>A5A 5A5 Canada</span>
-                </p>
-            </div>
-            <div class="text-box side2">
-                <h3>Stay updated</h3>
-                <p>Subscribe to our newsletter to stay updated.</p>
-                <div class="email-wrapper">
-                    <input type="email" id="email" name="email" placeholder="email address">
-                    <input type="submit" value="Subscribe">
-                </div>
-            </div>
-        </div>
-        <div class="copyright">Copyright @ 2019 HackerYou
+        <div class="row">
+            <p>Copyright &copy 2020 Juno</p>
         </div>
     </footer>
-
-    <!-- // Load in Jquery  -->
-    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'>
-    </script>
-
-    <script>
-        $(function() {
-			$('.hamburger').click(function() {
-				$('.menu-links').addClass('show');
-			});
-
-			$('.exit-menu').click(function() {
-				// toggle class show on the menu
-				$('.menu-links').removeClass('show');
-			});
-		});
-    </script>
 </body>
 </html>

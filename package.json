@@ -1,0 +1,25 @@
+{
+  "name": "sanctuary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theryan-s/ryan-shao-project-2.git"
+  },
+  "author": "Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theryan-s/ryan-shao-project-2/issues"
+  },
+  "homepage": "https://github.com/theryan-s/ryan-shao-project-2#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

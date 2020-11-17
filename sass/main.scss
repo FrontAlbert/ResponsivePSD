@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/setup";
+@import "base/base";
+@import "base/typography";
+
+@import "pages/home";
+@import "pages/contact";
+@import "pages/blog";
+
+@import "layout/navigation";
+@import "layout/footer";
+
+
